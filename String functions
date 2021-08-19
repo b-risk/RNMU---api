@@ -1,0 +1,80 @@
+StartOf:
+
+   rnmu:startof( String1 , String2 )
+
+
+   Example:
+
+   local startof = rnmu:startof('Hello, world!','Hello,')
+
+   print(startof) -- true
+
+
+   Description:
+
+   Returns true if String2 is at the start of String1.
+   
+EndOf:
+
+   rnmu:endof( String1 , String2 )
+
+
+   Example:
+
+   local startof = rnmu:endof('Hello, world!','world!')
+
+   print(startof) -- true
+
+
+   Description:
+
+   Returns true if String2 is at the end of String1.
+   
+At:
+
+   rnmu.at( String1 , String2 , Number1 , Number2 (optional) )
+
+
+   Example:
+
+   local at = rnmu.at('Hello world!',',',5)
+
+   print(at) -- Hello, world!
+
+
+   Description:
+
+   Returns string where String2 is at Number1 of String1.
+   
+ SubStart:
+
+   rnmu.substart( String1 , String2 , Number1 (optional) , Number2 (optional) )
+
+
+   Example:
+
+   local substart = rnmu.substart('Hello, world!',", ")
+
+   print(substart) -- world!
+
+
+   Description:
+
+   Returns string left cut String1 where String2 is found.
+   
+ SubEnd:
+
+   rnmu.subend( String1 , String2 , Number1 (optional) , Number2 (optional) )
+
+
+   Example:
+
+   local subend = rnmu.subend('Hello, world!',", ")
+
+   print(subend) -- Hello
+
+
+   Description:
+
+   Returns string right cut String1 where String2 is found.
+   
