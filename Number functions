@@ -1,0 +1,65 @@
+
+- Root:
+
+   rnmu.root( n , x )
+
+
+   Example:
+
+   local root = rnmu.root(4,2)
+
+   print(root) -- 2
+
+
+   Description:
+
+   Returns the nth root of x.
+   
+- Factual:
+
+   rnmu.fac( n )
+
+
+   Example:
+
+   local fac = rnmu.fac(3)
+
+   print(fac) -- 6
+
+
+   Description:
+
+   Returns the factual of n.
+   
+- Factors:
+
+   rnmu.factors( n )
+
+
+   Example:
+
+   local factors = rnmu.factors(100)
+
+   print(factors) -- { 1 , 2 , 4, etc...}
+
+
+   Description:
+
+   Returns a table of the factors of n.
+   
+- Factors:
+
+   rnmu.factors( n )
+
+
+   Example:
+
+   local factors = rnmu.factors(100)
+
+   print(factors) -- { 1 , 2 , 4, etc...}
+
+
+   Description:
+
+   Returns a table of the factors of n.
+   
