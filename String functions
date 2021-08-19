@@ -1,4 +1,4 @@
-StartOf:
+- StartOf:
 
    rnmu:startof( String1 , String2 )
 
@@ -14,7 +14,7 @@ StartOf:
 
    Returns true if String2 is at the start of String1.
    
-EndOf:
+- EndOf:
 
    rnmu:endof( String1 , String2 )
 
@@ -30,7 +30,7 @@ EndOf:
 
    Returns true if String2 is at the end of String1.
    
-At:
+- At:
 
    rnmu.at( String1 , String2 , Number1 , Number2 (optional) )
 
@@ -46,7 +46,7 @@ At:
 
    Returns string where String2 is at Number1 of String1.
    
- SubStart:
+- SubStart:
 
    rnmu.substart( String1 , String2 , Number1 (optional) , Number2 (optional) )
 
@@ -62,7 +62,7 @@ At:
 
    Returns string left cut String1 where String2 is found.
    
- SubEnd:
+- SubEnd:
 
    rnmu.subend( String1 , String2 , Number1 (optional) , Number2 (optional) )
 
@@ -77,4 +77,20 @@ At:
    Description:
 
    Returns string right cut String1 where String2 is found.
+   
+- SubEnd:
+
+   rnmu.suball( String1 , String2 , String3 , Number1 (optional) , Number2 (optional) )
+
+
+   Example:
+
+   local suball = rnmu.suball('wasdwadsdwasExampleHello, world!Example2',"Example","Example2")
+
+   print(suball) -- Hello, world!
+
+
+   Description:
+
+   Returns string left cut String1 where String2 is found, and right cut where String3 is found.
    
