@@ -1,0 +1,113 @@
+
+- Combine:
+
+   rnmu:Combine( Table1 , Table2 )
+
+
+   Example:
+
+   local combine = rnmu:Combine({'Hello'},{'world!'})
+
+   print(combine) -- {'Hello','world!'}
+
+
+   Description:
+
+   Returns a table of Table1 and Table2 combined.
+   
+- Vector3RotationFromCFrame:
+
+   rnmu:Vector3RotationFromCFrame( CFrame )
+
+
+   Example:
+
+   local vector3rotationfromcframe = rnmu:Vector3RotationFromCFrame(CFrame)
+
+   print(vector3rotationfromcframe) -- Vector3.new(X, Y, Z)
+
+
+   Description:
+
+   Returns the vector3 orientation of CFrame.
+   
+- GetBoundingBox:
+
+   rnmu:GetBoundingBox( Part )
+
+
+   Example:
+
+   local getboundingbox = rnmu:GetBoundingBox(Part)
+
+   print(getboundingbox) -- Vector3.new(X, Y, Z)
+
+
+   Description:
+
+   Returns the vector3 size of the axis aligned bounding box orientation of Part.
+   
+- Point:
+
+   rnmu:Point( Position1 , Position2 , { Size } or Part )
+
+
+   Example:
+
+   local point = rnmu:Point(Position1,Position2,Part)
+
+   print(point) -- {Size,CFrame}
+
+
+   Description:
+
+   Returns Size, and CFrame needed to make a line between Position1, and Position2, with the size of Part (or vector3 size in table).
+   
+- GetCorners:
+
+   rnmu:GetCorners( { Size , CFrame } or Part )
+
+
+   Example:
+
+   local getcorners = rnmu:GetCorners(Part)
+
+   print(getcorners) -- {{CFrame,Vector},...}
+
+
+   Description:
+
+   Returns a table of tables, with the cframe of the corner, and the signed XYZ of the position of Part, to the position of the corner.
+   
+- GetEdges:
+
+   rnmu:GetEdges( { Size , CFrame } or Part )
+
+
+   Example:
+
+   local getedges = rnmu:GetEdges(Part)
+
+   print(getedges) -- {{CFrame,Vector},...}
+
+
+   Description:
+
+   Returns a table of tables, with the cframe of the edge, and the signed XYZ of the position of Part, to the position of the edge.
+   
+- GetSides:
+
+   rnmu:GetSides( { Size , CFrame } or Part )
+
+
+   Example:
+
+   local getsides = rnmu:GetSides(Part)
+
+   print(getsides) -- {{CFrame,Vector},...}
+
+
+   Description:
+
+   Returns a table of tables, with the cframe of the side, and the signed XYZ of the position of Part, to the position of the side.
+   
