@@ -47,6 +47,22 @@
 
    Returns the vector3 size of the axis aligned bounding box orientation of Part.
    
+- Get2DBoundingBox:
+
+   rnmu:Get2DBoundingBox( Part )
+
+
+   Example:
+
+   local get2dboundingbox = rnmu:Get2DBoundingBox(Part)
+
+   print(get2dboundingbox) -- {Size,Position}
+
+
+   Description:
+
+   Returns a table of the Size, and Position needed to put a 2d bounding box around an object.
+   
 - Point:
 
    rnmu:Point( Position1 , Position2 , { Size } or Part )
