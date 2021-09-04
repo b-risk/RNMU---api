@@ -127,3 +127,20 @@
 
    Returns a table of tables, with the cframe of the side, and the signed XYZ of the position of Part, to the position of the side.
    
+- Rendered:
+
+   rnmu:Rendered( Part )
+
+
+   Example:
+
+   local rendered = rnmu:Rendered(Part)
+
+   print(rendered) -- true/false
+
+
+   Description:
+
+   Returns true if object is visible on screen, note that this function DOES NOT USE WorldToViewportPoint (which is terribly terribly inaccurate),
+   instead this uses a better method which gets it perfect 99% of the time.
+   
